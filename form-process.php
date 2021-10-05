@@ -20,7 +20,9 @@ if(isset($_POST["terms"])){
 In the body of the HTML page add an if statement that tests if the variable $terms is true. If $terms is true the user should receive a message stating 'You agreed to the terms and conditions.' if $terms is false they should receive a message stating 'You didn't agree to the terms and conditions.'
 */
 
-//Experiment with using the GET method instead of POST, make sure you understand the difference.
+/*
+Experiment with using the GET method instead of POST, make sure you understand the difference.
+*/
 
 ?>
 <!DOCTYPE html>
