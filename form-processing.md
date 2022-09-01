@@ -26,9 +26,9 @@ The data is sent as name-value pairs e.g. if the user entered *Fred* into the fi
 |uname|Fred|
 |col|red|
 
-Look carefully at the HTML in the form to see how these name-value pairs will be constructed.
+Look carefully at the HTML in the form to see how these name-value pairs are constructed.
 
-* The method attribute specifies how the data will be sent. In this example we use a value of POST. See below for an alternative to POST.
+* The method attribute specifies how the data will be sent. In this example we used a value of POST. See below for an alternative to POST.
 
 ### The PHP
 PHP in *somepage.php* has access to the form data through something called the ```$_POST``` variable. The text in quotes specifies which value we want to retrieve.
@@ -97,7 +97,7 @@ http://localhost/CIT2202/somepage.php?uname=Fred&col=red
 
 ### GET vs POST
 * Data sent by GET is visible in the URL as a query string:
-  * This can be bookmarked or accessed through the browser history, meaning users don't have to re-enter form information as they navigate back anf forth in the browser.
+  * This can be bookmarked or accessed through the browser history, meaning users don't have to re-enter form information as they navigate back and forth in the browser.
   * There are some security issues when using GET, the data sent is visible in the URL, and simply by looking back in the browser history the data will be visible.
   * There are limitations in terms of how much data can be sent. see https://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request.
 
