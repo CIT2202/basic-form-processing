@@ -3,7 +3,7 @@ $email = $_POST["email"];
 
 /*
 This page contains code that will display the email address the user entered.
-Add code that will also display the values from the other text fields and the radio buttons. 
+Add code that will also display the values from the other text field and the radio buttons. 
 Make sure you display the values from each of the different form controls in the body of the HTML page. 
 You will also need to make sure you have selected one of the radio buttons or you will get errors.
 */
@@ -11,6 +11,10 @@ You will also need to make sure you have selected one of the radio buttons or yo
 /*
 In the html-forms.html page add another form control to gather the user's phone number. 
 Display the entered phone number below along with the other values from the form. 
+*/
+
+/*
+See if you can write some code that will test if the user has answered the question correctly. 
 */
 
 /*
