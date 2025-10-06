@@ -21,6 +21,11 @@ See if you can write some code that will test if the user has answered the quest
 Experiment with using the GET method instead of POST, make sure you understand the difference.
 */
 
+/*
+In the first practical this week we looked at creating a simple HTML form (https://github.com/CIT2202/html-forms). 
+Create a PHP page that will display the data the user enters/selects from this form.
+*/
+
 ?>
 <!DOCTYPE html>
 <html>
