@@ -26,6 +26,5 @@ Now move onto [Completing the practical work](#practical)
 
 ## Completing the practical work <a name="practical"></a>
 
-# Basic Form Processing
 * Answer the questions in *form-process.php*.
 * Use these [notes](https://github.com/CIT2202/basic-form-processing/blob/master/form-processing.md) to help you answer the questions.
