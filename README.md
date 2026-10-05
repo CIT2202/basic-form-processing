@@ -8,23 +8,11 @@ git clone https://github.com/CIT2202/basic-form-processing
 ```
 This will copy the contents of this repository into your codespace.
 
-- If needed, start Apache i.e. enter `apache2ctl start` in the terminal.
-- Some simple form processing has been set up already. Make sure it works. View *html-forms.html* through a browser. Enter something for the email address and hit submit. The data you entered should be displayed.
 
-Now move onto [Completing the practical work](#practical)
+In your codespace, in vs code open the files _index.html_ and _process-the-form.php_
 
-## If you are using XAMPP
+View _index.html_ in a web browser.
 
-- Download the code in this repository (click on the big green button that says 'code')
-- Unzip the folder.
-- Copy it into the htdocs folder on XAMPP
-- Open the folder using your text editor of choice e.g. VS Code
-* Some simple form processing has been set up already. Make sure it works. View *html-forms.html* through a browser (it must be on a server). Enter something for the email address and hit submit. The data you entered should be displayed.
+Answer the questions in _process-the-form.php_.
 
-
-Now move onto [Completing the practical work](#practical)
-
-## Completing the practical work <a name="practical"></a>
-
-* Answer the questions in *form-process.php*.
-* Use these [notes](https://github.com/CIT2202/basic-form-processing/blob/master/form-processing.md) to help you answer the questions.
+Use these [form processing notes](form-processing.md) to help you answer the questions.

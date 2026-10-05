@@ -3,10 +3,10 @@ Nearly all useful web applications involve form processing. The user enters some
 
 ## A simple example
 ### The HTML
-Before looking at the PHP, we need to know about a couple of HTML attributes. Have a look at the following form.
+Before looking at the PHP, we need to know about a couple of HTML attributes. Look at the following form.
 
 ```html
-<form action="somepage.php" method="POST">
+<form action="form-processing-page.php" method="POST">
 <p>
 <label for="uname">Name:</label>
 <input type="text" name="uname" id="uname">
@@ -17,7 +17,7 @@ Before looking at the PHP, we need to know about a couple of HTML attributes. Ha
 </form>
 
 ```
-You should be familiar with most of the HTML in the above form. Two things we haven't really discussed previously are the *action* and *method* attributes. The *action* attribute specifies where the data will be sent. So in the above example, when the user clicks the submit button, the data will be sent to *somepage.php*.  
+You should be familiar with most of the HTML in the above form. Two things we haven't really discussed previously are the *action* and *method* attributes. The *action* attribute specifies where the data will be sent. So in the above example, when the user clicks the submit button, the data will be sent to *form-processing-page.php*.  
 
 The data is sent as name-value pairs e.g. if the user entered *Fred* into the first text field and *red* into the second, the browser will send:
 
@@ -31,7 +31,9 @@ Look carefully at the HTML in the form to see how these name-value pairs are con
 * The method attribute specifies how the data will be sent. In this example we used a value of POST. See below for an alternative to POST.
 
 ### The PHP
-PHP in *somepage.php* has access to the form data through something called the ```$_POST``` variable. The text in quotes specifies which value we want to retrieve.
+PHP in *form-processing-page.php* has access to the form data through something called the ```$_POST``` variable. The text in quotes specifies which value we want to retrieve.
+
+**form-processing-page.php**
 
 ```php
 …
@@ -53,14 +55,14 @@ echo "Welcome {$uname}. Your favourite colour is {$col}.</p>";
 </html>
 ```
 
-This example uses text boxes but other form controls e.g. radio buttons, select menus work in the same way.
+This example uses text boxes but other form controls e.g. radio buttons, select menus work in a similar way.
 
 ## The method attribute
 The previous example used the POST method. The other method we will use is the GET method. Here's an example:
 
 HTML
 ```html
-<form action="somepage.php" method="GET">
+<form action="form-processing-page.php" method="GET">
 <p>
 <label for="uname">Name:</label>
 <input type="text" name="uname" id="uname">
@@ -73,7 +75,7 @@ HTML
 Note this is nearly identical to the first example. The only difference is in the ```method``` attribute that has been changed to *GET*.
 
 
-somepage.php
+**form-processing-page.php**
 
 ```php
 <?php
@@ -87,7 +89,7 @@ $col = $_GET["col"]; //gets hold of whatever the user typed into the col text fi
 * When the user clicks the submit button, the browser will generate the  url like the following:
 
 ```
-http://localhost/CIT2202/somepage.php?uname=Fred&col=red
+http://localhost/CIT2202/form-processing-page.php?uname=Fred&col=red
 ```
 
 * The name-value pairs are appended to the URL.
@@ -99,11 +101,13 @@ http://localhost/CIT2202/somepage.php?uname=Fred&col=red
 * Data sent by GET is visible in the URL as a query string:
   * This can be bookmarked or accessed through the browser history, meaning users don't have to re-enter form information as they navigate back and forth in the browser.
   * There are some security issues when using GET, the data sent is visible in the URL, and simply by looking back in the browser history the data will be visible.
-  * There are limitations in terms of how much data can be sent. see https://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request.
+  * There are limitations in terms of how much data can be sent. See https://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request.
 
 * POST is used for:
   * Submitting data for inclusion is a database.
   * Ordering a product.
   * Submitting usernames/passwords.
 
-Generally GET requests should be used when retrieving data e.g. submitting a search term. For most form processing applications POST should be used.
+Generally GET requests should be used when retrieving data e.g. submitting a search term. 
+
+For most form processing applications POST should be used.
