@@ -1,13 +1,13 @@
 # Basic Form Processing
-## If you are using Codespaces
 
-- Open your existing codespace (you shouldn't create a new one) https://github.com/codespaces.
-- In the terminal enter
+Open your existing codespace (you shouldn't create a new one) https://github.com/codespaces.
+
+In the terminal enter
+
 ```
 git clone https://github.com/CIT2202/basic-form-processing
 ```
-This will copy the contents of this repository into your codespace.
-
+This will copy the contents of this repository into your codespace
 
 In your codespace, in vs code open the files _index.html_ and _process-the-form.php_
 
